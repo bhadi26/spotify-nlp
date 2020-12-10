@@ -22,17 +22,10 @@ import wordcloud
 # LSA docs: https://www.datacamp.com/community/tutorials/discovering-hidden-topics-python
 
 # get data from spotify API 
-client_id = "bd3dc9952303469ab92c26003c1671df"
-client_secret = ("961f666121cb475f873747ca914d15fd")
-redirect_uri = 'http://localhost:8888/callback/'
 
 # get data from lyricsgenius API 
-lg_client_id = "8ijbdDZMVPw9ifyznAK_mldKOQZLLoLLnDDBTF_4vzfrVqMcHyswaAG4S2H8nZKB"
-lg_client_secret = "GiB8PzyYTjxRgKIPnqiT0j0mixs8gs5FcB6QOBzRzFr7aXvrR5aTAIQpgzLgdRxCIsHnfFQT9TzXMOnpJrvrVw"
-lg_key = 'Iu-J6ZRMJLvEdOaKEPUq6ek5dZ5n5TmmOtzAwwShTQhDW_SwCk4-O0mfn3MMqm3Z' # need to regenerate this
 
 #username = input("Enter spotify email: ")
-username = 'beccahadi@gmail.com'
 scope = 'user-top-read'
 token = util.prompt_for_user_token(username,scope,client_id,client_secret,redirect_uri)
 
